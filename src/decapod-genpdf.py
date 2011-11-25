@@ -52,8 +52,8 @@ class Options:
         self.lineRec1CMD   = ["ocropus","lines2fsts"] #  cmd line tool for line recognition
         self.lineRec2CMD   = ["ocropus","fsts2text"] #
         self.clusterCMD    = "binned-inter" # cmd line tool for clustering
-        self.fontCMD       = "./fontGrouper.py" # cmd line tool for font generation
-        self.pdfGenCMD     = "./ocro2pdf.py"  # cmd line tool for PDF generation
+        self.fontCMD       = "fontGrouper.py" # cmd line tool for font generation
+        self.pdfGenCMD     = "ocro2pdf.py"  # cmd line tool for PDF generation
         
     def createImageList(self, dir):
         imageFormats = [".jpg", ".tif", ".tiff", ".png", ".bmp"] #FIXME: add more image file types supported by Ocropus
